@@ -48,7 +48,7 @@ python-dateutil==1.5
 python-telegram-bot==12.1.1
 pytz==2019.1
 PyVirtualDisplay==0.2.4
-PyYAML==3.13
+PyYAML==5.1
 query-string==2019.4.13
 regex==2019.8.19
 request==2019.4.13
