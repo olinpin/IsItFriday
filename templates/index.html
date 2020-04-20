@@ -4,15 +4,38 @@
         <title>Is it Friday?</title>
     </head>
     <style>
-        body {
+        #content {
             text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+            font-size: 25pt;
+            font-weight: lighter;
+            font-family: Verdana, Geneva, sans-serif;
+        }
+        #outer {
+            position: absolute;
+            display: table;
+            width: 100%;
+            height: 99%;
+            margin: 0 auto;
+        }
+        #upper {
+            width: 100%;
+            height: 85%;
+            display: table-row;
         }
     </style>
     <body>
-        {% if friday %}
-        <h1>Yessir!</h1>
-        {% else %}
-        <h1>Nosir!</h1>
-        {% endif %}
+        <div id="outer">
+            <div id="upper">
+                <div id="content">
+                    {% if friday %}
+                    <h1>Yes!</h1>
+                    {% else %}
+                    <h1>No!</h1>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
     </body>
 </html>
